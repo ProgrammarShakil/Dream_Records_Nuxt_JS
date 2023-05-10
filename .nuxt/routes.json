@@ -1,0 +1,16 @@
+[
+  {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/dashboard/index.vue",
+    "chunkName": "pages/dashboard/index",
+    "_name": "_ce2dcfb4"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_aae1aabe"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "IconsActiveAudio": {
+    "description": "Auto imported from components/Icons/ActiveAudio.vue"
+  },
+  "IconsActiveEdit": {
+    "description": "Auto imported from components/Icons/ActiveEdit.vue"
+  },
+  "IconsActiveHome": {
+    "description": "Auto imported from components/Icons/ActiveHome.vue"
+  },
+  "IconsBack": {
+    "description": "Auto imported from components/Icons/Back.vue"
+  },
+  "IconsCorrectionRequest": {
+    "description": "Auto imported from components/Icons/CorrectionRequest.vue"
+  },
+  "IconsCross": {
+    "description": "Auto imported from components/Icons/Cross.vue"
+  },
+  "IconsDrafts": {
+    "description": "Auto imported from components/Icons/Drafts.vue"
+  },
+  "IconsInactiveAnalytics": {
+    "description": "Auto imported from components/Icons/InactiveAnalytics.vue"
+  },
+  "IconsInactiveAudio": {
+    "description": "Auto imported from components/Icons/InactiveAudio.vue"
+  },
+  "IconsInactiveCatalog": {
+    "description": "Auto imported from components/Icons/InactiveCatalog.vue"
+  },
+  "IconsInactiveEarning": {
+    "description": "Auto imported from components/Icons/InactiveEarning.vue"
+  },
+  "IconsInactiveEdit": {
+    "description": "Auto imported from components/Icons/InactiveEdit.vue"
+  },
+  "IconsInactivePrimaryArtist": {
+    "description": "Auto imported from components/Icons/InactivePrimaryArtist.vue"
+  },
+  "IconsInactiveReleaseAudio": {
+    "description": "Auto imported from components/Icons/InactiveReleaseAudio.vue"
+  },
+  "IconsInactiveYoutube": {
+    "description": "Auto imported from components/Icons/InactiveYoutube.vue"
+  },
+  "IconsLogo": {
+    "description": "Auto imported from components/Icons/Logo.vue"
+  },
+  "IconsSettings": {
+    "description": "Auto imported from components/Icons/Settings.vue"
+  },
+  "IconsSupportCenter": {
+    "description": "Auto imported from components/Icons/SupportCenter.vue"
+  },
+  "IconsVolume": {
+    "description": "Auto imported from components/Icons/Volume.vue"
+  }
+}
