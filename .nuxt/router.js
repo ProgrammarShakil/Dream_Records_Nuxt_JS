@@ -4,7 +4,13 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _3bc9c298 = () => interopDefault(import('../pages/analytics/index.vue' /* webpackChunkName: "pages/analytics/index" */))
+const _73f39d2b = () => interopDefault(import('../pages/catalog/index.vue' /* webpackChunkName: "pages/catalog/index" */))
 const _ce2dcfb4 = () => interopDefault(import('../pages/dashboard/index.vue' /* webpackChunkName: "pages/dashboard/index" */))
+const _069908dc = () => interopDefault(import('../pages/earning/index.vue' /* webpackChunkName: "pages/earning/index" */))
+const _59c0f88a = () => interopDefault(import('../pages/primaryArtist/index.vue' /* webpackChunkName: "pages/primaryArtist/index" */))
+const _a2edccda = () => interopDefault(import('../pages/releaseAudio/index.vue' /* webpackChunkName: "pages/releaseAudio/index" */))
+const _154334f0 = () => interopDefault(import('../pages/youtubeRequest/index.vue' /* webpackChunkName: "pages/youtubeRequest/index" */))
 const _aae1aabe = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -19,9 +25,33 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/analytics",
+    component: _3bc9c298,
+    name: "analytics"
+  }, {
+    path: "/catalog",
+    component: _73f39d2b,
+    name: "catalog"
+  }, {
     path: "/dashboard",
     component: _ce2dcfb4,
     name: "dashboard"
+  }, {
+    path: "/earning",
+    component: _069908dc,
+    name: "earning"
+  }, {
+    path: "/primaryArtist",
+    component: _59c0f88a,
+    name: "primaryArtist"
+  }, {
+    path: "/releaseAudio",
+    component: _a2edccda,
+    name: "releaseAudio"
+  }, {
+    path: "/youtubeRequest",
+    component: _154334f0,
+    name: "youtubeRequest"
   }, {
     path: "/",
     component: _aae1aabe,

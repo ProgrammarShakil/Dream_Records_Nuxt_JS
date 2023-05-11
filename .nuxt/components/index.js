@@ -1,3 +1,5 @@
+export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
+export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
 export { default as IconsActiveAudio } from '../../components/Icons/ActiveAudio.vue'
 export { default as IconsActiveEdit } from '../../components/Icons/ActiveEdit.vue'
 export { default as IconsActiveHome } from '../../components/Icons/ActiveHome.vue'

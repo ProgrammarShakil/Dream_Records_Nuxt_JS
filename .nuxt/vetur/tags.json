@@ -1,4 +1,10 @@
 {
+  "MainComponentDashboardTopNav": {
+    "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
+  },
+  "MainComponentSideMenuDashboard": {
+    "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
+  },
   "IconsActiveAudio": {
     "description": "Auto imported from components/Icons/ActiveAudio.vue"
   },
