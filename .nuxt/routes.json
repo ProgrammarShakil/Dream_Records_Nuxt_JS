@@ -49,6 +49,13 @@
     "_name": "_154334f0"
   },
   {
+    "name": "releaseAudio-show",
+    "path": "/releaseAudio/show",
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/releaseAudio/show.vue",
+    "chunkName": "pages/releaseAudio/show",
+    "_name": "_4580c6cc"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/index.vue",

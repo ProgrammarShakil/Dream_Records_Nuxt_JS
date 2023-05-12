@@ -20,6 +20,9 @@
   "IconsDrafts": {
     "description": "Auto imported from components/Icons/Drafts.vue"
   },
+  "IconsErrorIcon": {
+    "description": "Auto imported from components/Icons/ErrorIcon.vue"
+  },
   "IconsInactiveAnalytics": {
     "description": "Auto imported from components/Icons/InactiveAnalytics.vue"
   },
@@ -49,6 +52,9 @@
   },
   "IconsLogo": {
     "description": "Auto imported from components/Icons/Logo.vue"
+  },
+  "IconsRightIcon": {
+    "description": "Auto imported from components/Icons/RightIcon.vue"
   },
   "IconsSettings": {
     "description": "Auto imported from components/Icons/Settings.vue"

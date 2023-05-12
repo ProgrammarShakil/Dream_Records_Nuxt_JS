@@ -27,7 +27,7 @@
 
           <li>
             <NuxtLink
-              to="releaseAudio"
+              to="/releaseAudio"
               class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
             >
               <InactiveReleaseAudio />
@@ -57,7 +57,7 @@
 
           <li>
             <NuxtLink
-              to="primaryArtist"
+              to="/primaryArtist"
               class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
             >
               <InactivePrimaryArtist />

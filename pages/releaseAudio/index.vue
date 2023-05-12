@@ -25,7 +25,9 @@
                 <div>
                   <!-- submit or preview button on the top from -->
                   <button type="submit" class="rounded-md btn-primary">
-                    Preview
+                    <!-- Preview -->
+                    <NuxtLink to="/releaseAudio/show">Preview</NuxtLink>  <!-- temporary -->
+                   
                   </button>
                   <!-- /submit or preview button on the top from -->
                 </div>
