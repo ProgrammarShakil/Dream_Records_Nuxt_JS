@@ -1,5 +1,3 @@
-export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
-export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
 export { default as IconsActiveAudio } from '../../components/Icons/ActiveAudio.vue'
 export { default as IconsActiveEdit } from '../../components/Icons/ActiveEdit.vue'
 export { default as IconsActiveHome } from '../../components/Icons/ActiveHome.vue'
@@ -15,10 +13,14 @@ export { default as IconsInactiveEdit } from '../../components/Icons/InactiveEdi
 export { default as IconsInactivePrimaryArtist } from '../../components/Icons/InactivePrimaryArtist.vue'
 export { default as IconsInactiveReleaseAudio } from '../../components/Icons/InactiveReleaseAudio.vue'
 export { default as IconsInactiveYoutube } from '../../components/Icons/InactiveYoutube.vue'
+export { default as IconsInputPlus } from '../../components/Icons/InputPlus.vue'
 export { default as IconsLogo } from '../../components/Icons/Logo.vue'
 export { default as IconsSettings } from '../../components/Icons/Settings.vue'
 export { default as IconsSupportCenter } from '../../components/Icons/SupportCenter.vue'
+export { default as IconsUploadIcon } from '../../components/Icons/UploadIcon.vue'
 export { default as IconsVolume } from '../../components/Icons/Volume.vue'
+export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
+export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

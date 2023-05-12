@@ -286,8 +286,8 @@
             </div>
             <!-- /Drafts -->
           </div>
+          <!-- /Correction Requested and Drafts -->
         </div>
-        <!-- /Correction Requested and Drafts -->
 
         <!-- content center  -->
 
