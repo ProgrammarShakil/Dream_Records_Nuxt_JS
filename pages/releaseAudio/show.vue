@@ -238,7 +238,7 @@
       </div>
       <!-- /release info details -->
       <!-- Release Information errors -->
-      <div class="lg:-mt-14">
+      <div class="lg:-mt-4">
         <div class="flex ml-3">
           <div class="font-medium">Release Information</div>
           <div class="ml-3">
