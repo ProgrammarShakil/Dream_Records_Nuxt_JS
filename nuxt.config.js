@@ -1,5 +1,8 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+ // Target: https://go.nuxtjs.dev/config-target
+ target: 'server',
+ ssr: true,
   head: {
     title: 'Dream',
     htmlAttrs: {
@@ -40,5 +43,14 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
   }
 }
