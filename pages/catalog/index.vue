@@ -21,7 +21,7 @@
           <!-- create release -->
           <div>
             <button type="submit" class="rounded-md btn-primary ml-3">
-              <NuxtLink to="/releaseAudio/show">Create Release</NuxtLink>
+              <NuxtLink to="/catalog/show">Create Release</NuxtLink>
             </button>
           </div>
           <!-- /create release -->
