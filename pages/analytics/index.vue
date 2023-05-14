@@ -11,7 +11,6 @@
       <!-- /top nav area  -->
       <div>
         <!-- -------------- -->
-
         <div class="p-3 space-y-2">
           <p class="font-medium">Overview</p>
           <p class="secondary-color text-xs">

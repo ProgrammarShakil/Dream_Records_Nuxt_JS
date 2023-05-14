@@ -67,7 +67,7 @@
 
           <li>
             <NuxtLink
-              to="/youtubeRequest"
+              to="/youtubeRequest/addClaimRelease"
               class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
             >
               <InactiveYoutube />
