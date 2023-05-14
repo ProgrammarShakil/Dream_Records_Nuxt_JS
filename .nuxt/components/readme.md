@@ -30,6 +30,7 @@ You can directly use them in pages and other components without the need to impo
 - `<IconsSearchIcon>` | `<icons-search-icon>` (components/Icons/SearchIcon.vue)
 - `<IconsSettings>` | `<icons-settings>` (components/Icons/Settings.vue)
 - `<IconsSupportCenter>` | `<icons-support-center>` (components/Icons/SupportCenter.vue)
+- `<IconsTableFilterIcon>` | `<icons-table-filter-icon>` (components/Icons/TableFilterIcon.vue)
 - `<IconsUploadIcon>` | `<icons-upload-icon>` (components/Icons/UploadIcon.vue)
 - `<IconsVolume>` | `<icons-volume>` (components/Icons/Volume.vue)
 - `<MainComponentDashboardTopNav>` | `<main-component-dashboard-top-nav>` (components/MainComponent/DashboardTopNav.vue)
