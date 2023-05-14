@@ -12,6 +12,7 @@ const _59c0f88a = () => interopDefault(import('../pages/primaryArtist/index.vue'
 const _a2edccda = () => interopDefault(import('../pages/releaseAudio/index.vue' /* webpackChunkName: "pages/releaseAudio/index" */))
 const _154334f0 = () => interopDefault(import('../pages/youtubeRequest/index.vue' /* webpackChunkName: "pages/youtubeRequest/index" */))
 const _7d6b7034 = () => interopDefault(import('../pages/catalog/show.vue' /* webpackChunkName: "pages/catalog/show" */))
+const _fee0879e = () => interopDefault(import('../pages/primaryArtist/edit.vue' /* webpackChunkName: "pages/primaryArtist/edit" */))
 const _4580c6cc = () => interopDefault(import('../pages/releaseAudio/show.vue' /* webpackChunkName: "pages/releaseAudio/show" */))
 const _aae1aabe = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -58,6 +59,10 @@ export const routerOptions = {
     path: "/catalog/show",
     component: _7d6b7034,
     name: "catalog-show"
+  }, {
+    path: "/primaryArtist/edit",
+    component: _fee0879e,
+    name: "primaryArtist-edit"
   }, {
     path: "/releaseAudio/show",
     component: _4580c6cc,

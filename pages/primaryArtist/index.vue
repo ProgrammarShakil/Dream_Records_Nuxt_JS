@@ -119,7 +119,9 @@
               <td class="border border-slate-300 p-2">ID</td>
 
               <td class="border border-slate-300 p-2">ID</td>
-              <td class="border border-slate-300 p-2 primary-color">Edit</td>
+              <td class="border border-slate-300 p-2 primary-color">
+                <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+              </td>
             </tr>
             <tr class="secondary-color">
               <td class="border border-slate-300 p-2">1234</td>
@@ -132,7 +134,9 @@
               <td class="border border-slate-300 p-2">ID</td>
 
               <td class="border border-slate-300 p-2">ID</td>
-              <td class="border border-slate-300 p-2 primary-color">Edit</td>
+              <td class="border border-slate-300 p-2 primary-color">
+                <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+              </td>
             </tr>
           </tbody>
         </table>
