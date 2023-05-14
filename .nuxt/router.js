@@ -10,10 +10,12 @@ const _ce2dcfb4 = () => interopDefault(import('../pages/dashboard/index.vue' /* 
 const _069908dc = () => interopDefault(import('../pages/earning/index.vue' /* webpackChunkName: "pages/earning/index" */))
 const _59c0f88a = () => interopDefault(import('../pages/primaryArtist/index.vue' /* webpackChunkName: "pages/primaryArtist/index" */))
 const _a2edccda = () => interopDefault(import('../pages/releaseAudio/index.vue' /* webpackChunkName: "pages/releaseAudio/index" */))
-const _154334f0 = () => interopDefault(import('../pages/youtubeRequest/index.vue' /* webpackChunkName: "pages/youtubeRequest/index" */))
 const _7d6b7034 = () => interopDefault(import('../pages/catalog/show.vue' /* webpackChunkName: "pages/catalog/show" */))
 const _fee0879e = () => interopDefault(import('../pages/primaryArtist/edit.vue' /* webpackChunkName: "pages/primaryArtist/edit" */))
 const _4580c6cc = () => interopDefault(import('../pages/releaseAudio/show.vue' /* webpackChunkName: "pages/releaseAudio/show" */))
+const _8f4881ec = () => interopDefault(import('../pages/youtubeRequest/addClaimRelease.vue' /* webpackChunkName: "pages/youtubeRequest/addClaimRelease" */))
+const _87bbe2d8 = () => interopDefault(import('../pages/youtubeRequest/artistChannelReq.vue' /* webpackChunkName: "pages/youtubeRequest/artistChannelReq" */))
+const _f4ecbe48 = () => interopDefault(import('../pages/youtubeRequest/contentIdReq.vue' /* webpackChunkName: "pages/youtubeRequest/contentIdReq" */))
 const _aae1aabe = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -52,10 +54,6 @@ export const routerOptions = {
     component: _a2edccda,
     name: "releaseAudio"
   }, {
-    path: "/youtubeRequest",
-    component: _154334f0,
-    name: "youtubeRequest"
-  }, {
     path: "/catalog/show",
     component: _7d6b7034,
     name: "catalog-show"
@@ -67,6 +65,18 @@ export const routerOptions = {
     path: "/releaseAudio/show",
     component: _4580c6cc,
     name: "releaseAudio-show"
+  }, {
+    path: "/youtubeRequest/addClaimRelease",
+    component: _8f4881ec,
+    name: "youtubeRequest-addClaimRelease"
+  }, {
+    path: "/youtubeRequest/artistChannelReq",
+    component: _87bbe2d8,
+    name: "youtubeRequest-artistChannelReq"
+  }, {
+    path: "/youtubeRequest/contentIdReq",
+    component: _f4ecbe48,
+    name: "youtubeRequest-contentIdReq"
   }, {
     path: "/",
     component: _aae1aabe,
