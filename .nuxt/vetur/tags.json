@@ -71,6 +71,9 @@
   "IconsSupportCenter": {
     "description": "Auto imported from components/Icons/SupportCenter.vue"
   },
+  "IconsTableFilterIcon": {
+    "description": "Auto imported from components/Icons/TableFilterIcon.vue"
+  },
   "IconsUploadIcon": {
     "description": "Auto imported from components/Icons/UploadIcon.vue"
   },
