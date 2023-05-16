@@ -6,7 +6,7 @@
 
     <!-- content area -->
     <div
-      class="bg-dash ml-auto pb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]"
+      class="bg-dash h-screen ml-auto pb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]"
     >
       <!-- top nav area  -->
       <DashboardTopNav />
