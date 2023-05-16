@@ -1,3 +1,5 @@
+export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
+export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
 export { default as IconsActiveAudio } from '../../components/Icons/ActiveAudio.vue'
 export { default as IconsActiveEdit } from '../../components/Icons/ActiveEdit.vue'
 export { default as IconsActiveHome } from '../../components/Icons/ActiveHome.vue'
@@ -25,8 +27,6 @@ export { default as IconsSupportCenter } from '../../components/Icons/SupportCen
 export { default as IconsTableFilterIcon } from '../../components/Icons/TableFilterIcon.vue'
 export { default as IconsUploadIcon } from '../../components/Icons/UploadIcon.vue'
 export { default as IconsVolume } from '../../components/Icons/Volume.vue'
-export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
-export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

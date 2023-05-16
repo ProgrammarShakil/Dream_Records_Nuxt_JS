@@ -5,7 +5,7 @@
         class="px-6 flex items-center justify-between space-x-4 2xl:container"
       >
         <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">
-          <Back />
+          <Back class="cursor-pointer" />
         </h5>
         <button class="w-12 h-16 -mr-2 border-r lg:hidden">
           <svg
@@ -25,7 +25,7 @@
         </button>
         <div class="flex space-x-4">
           <!--search bar -->
-          <div class="secondary-color mt-2">Mahfuzur R.</div>
+          <div class="secondary-color mt-2 cursor-pointer">Mahfuzur R.</div>
           <!--/search bar -->
           <button
             aria-label="search"
@@ -43,11 +43,11 @@
               ></path>
             </svg>
           </button>
-          <div class="rounded mt-1">
+          <div class="rounded mt-1 cursor-pointer">
             <img src="~/assets/img/demoProfilePic.png" />
           </div>
           <div>
-            <Settings class="mt-2" />
+            <Settings class="mt-2 cursor-pointer" />
           </div>
         </div>
       </div>

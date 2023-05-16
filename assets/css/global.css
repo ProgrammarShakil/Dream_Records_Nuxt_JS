@@ -15,21 +15,21 @@
   padding: 10px 25px;
   color: #fff;
 }
-.btn-primary-sm{
+.btn-primary-sm {
   background-color: #783efd;
   padding: 3px 6px;
   color: #fff;
   border-radius: 3px;
 }
-.btn-page-active{
+.btn-page-active {
   background-color: #783efd;
   color: #fff;
 }
-.btn-page-inactive{
+.btn-page-inactive {
   background-color: #fff;
   color: #000;
 }
-.btn-pagination-common{
+.btn-pagination-common {
   padding: 5px;
   width: 25px;
   height: 25px;
@@ -39,11 +39,11 @@
   justify-content: center;
   cursor: pointer;
 }
-.btn-page-arrow{
+.btn-page-arrow {
   background-color: #ccc;
 }
-.btn-red-sm{
-  background-color: #CD3740;
+.btn-red-sm {
+  background-color: #cd3740;
   padding: 3px 6px;
   color: #fff;
   border-radius: 3px;
@@ -63,13 +63,16 @@
 }
 .cust-input:focus {
   background: #fff;
-  border: 1px solid #783EFD;
+  border: 1px solid #783efd;
   outline: none;
 }
-.cust-select-input{
-    width : 100%;
-    padding: 2px 0;
+.cust-select-input {
+  width: 100%;
+  padding: 2px 0;
 }
-.p-cust-11{
+.p-cust-11 {
   padding: 11.5px;
+}
+.custHide {
+  display: none;
 }
