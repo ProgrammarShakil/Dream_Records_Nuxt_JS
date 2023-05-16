@@ -5,9 +5,7 @@
     <!-- /menubar -->
 
     <!-- content area -->
-    <div
-      class="bg-dash ml-auto pb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]"
-    >
+    <div class="bg-dash ml-auto pb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
       <!-- top nav area  -->
       <DashboardTopNav />
       <!-- /top nav area  -->
@@ -21,7 +19,7 @@
           <!-- create release -->
           <div>
             <button type="submit" class="rounded-md btn-primary ml-3">
-              <NuxtLink to="/catalog/show">Create Release</NuxtLink>
+              <NuxtLink to="/releaseAudio">Create Release</NuxtLink>
             </button>
           </div>
           <!-- /create release -->
@@ -33,7 +31,7 @@
       <div class="p-3 flex justify-between items-center">
         <div class="">
           <div class="text-lg secondary-color font-medium">
-            Showing results - 5
+            Showing results - {{ songs.length }}
           </div>
         </div>
         <div>
@@ -63,68 +61,44 @@
         </div>
       </div>
       <!-- /showing result and search  -->
+      <div
+        v-if="!songs.length"
+        class="text-lg secondary-color font-medium w-full flex items-center justify-center h-screen"
+      >
+        No Tracks Found.
+      </div>
       <!-- cover song  -->
-      <div class="lg:flex justify-between items-center space-x-3 px-3">
+      <div
+        v-else-if="songs.length"
+        class="lg:flex lg:flex-wrap justify-between items-center space-x-3 px-3"
+      >
         <div
-          class="h-full relative rounded-md p-3 border border-gray-200 bg-white"
+          v-for="item in songs"
+          :key="item.id"
+          @click="openTrack(item.id)"
+          class="h-full lg:w-1/5 relative rounded-md p-3 border border-gray-200 bg-white cursor-pointer"
         >
           <div class="">
-            <img src="~/assets/img/cover-song.png" alt="" />
+            <img :src="item.thumbnail_url" alt="" />
           </div>
           <div>
-            <p class="font-medium mt-3">Track Title</p>
-            <p class="text-xs secondary-color mt-4">By Name</p>
+            <p class="font-medium mt-3">{{ item.title }}</p>
+            <p class="text-xs secondary-color mt-4">
+              {{ item.primary_artist }}
+            </p>
           </div>
           <div class="absolute top-8 right-8">
             <img src="~/assets/img/RightIconPng.png" />
           </div>
         </div>
-        <div
-          class="h-full relative rounded-md p-3 border border-gray-200 bg-white"
-        >
-          <div class="">
-            <img src="~/assets/img/cover-song.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium mt-3">Track Title</p>
-            <p class="text-xs secondary-color mt-4">By Name</p>
-          </div>
-          <div class="absolute top-8 right-8">
-            <img src="~/assets/img/StarIconPng.png" />
-          </div>
-        </div>
-        <div
-          class="h-full relative rounded-md p-3 border border-gray-200 bg-white"
-        >
-          <div class="">
-            <img src="~/assets/img/cover-song.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium mt-3">Track Title</p>
-            <p class="text-xs secondary-color mt-4">By Name</p>
-          </div>
-          <div class="absolute top-8 right-8">
-            <img src="~/assets/img/StarIconPng.png" />
-          </div>
-        </div>
-        <div
-          class="h-full relative rounded-md p-3 border border-gray-200 bg-white"
-        >
-          <div class="">
-            <img src="~/assets/img/cover-song.png" alt="" />
-          </div>
-          <div>
-            <p class="font-medium mt-3">Track Title</p>
-            <p class="text-xs secondary-color mt-4">By Name</p>
-          </div>
-          <div class="absolute top-8 right-8">
-            <img src="~/assets/img/ErrorIconPng.png" />
-          </div>
-        </div>
       </div>
+
       <!-- /cover song  -->
       <!-- pagination  -->
-      <div class="flex justify-between items-center w-48 mt-4 mx-3">
+      <div
+        v-if="songs.length"
+        class="flex justify-between items-center w-48 mt-4 mx-3"
+      >
         <div class="btn-page-arrow btn-pagination-common drop-shadow-md">
           <LeftArrowIcon />
         </div>
@@ -151,12 +125,22 @@
 export default {
   components: {
     SideMenuDashboard: () =>
-      import("@/components/MainComponent/SideMenuDashboard.vue"),
+      import('@/components/MainComponent/SideMenuDashboard.vue'),
     DashboardTopNav: () =>
-      import("@/components/MainComponent/DashboardTopNav.vue"),
-    SearchIcon: () => import("@/components/Icons/SearchIcon.vue"),
-    LeftArrowIcon: () => import("@/components/Icons/LeftArrowIcon.vue"),
-    RightArrowIcon: () => import("@/components/Icons/RightArrowIcon.vue"),
+      import('@/components/MainComponent/DashboardTopNav.vue'),
+    SearchIcon: () => import('@/components/Icons/SearchIcon.vue'),
+    LeftArrowIcon: () => import('@/components/Icons/LeftArrowIcon.vue'),
+    RightArrowIcon: () => import('@/components/Icons/RightArrowIcon.vue'),
+  },
+  computed: {
+    songs() {
+      return this.$store.state.songs.list;
+    },
+  },
+  methods: {
+    openTrack(id) {
+      this.$router.push(`/catalog/${id}`);
+    },
   },
 };
 </script>

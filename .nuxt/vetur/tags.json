@@ -1,10 +1,4 @@
 {
-  "MainComponentDashboardTopNav": {
-    "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
-  },
-  "MainComponentSideMenuDashboard": {
-    "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
-  },
   "IconsActiveAudio": {
     "description": "Auto imported from components/Icons/ActiveAudio.vue"
   },
@@ -85,5 +79,14 @@
   },
   "IconsVolume": {
     "description": "Auto imported from components/Icons/Volume.vue"
+  },
+  "MainComponentAlert": {
+    "description": "Auto imported from components/MainComponent/Alert.vue"
+  },
+  "MainComponentDashboardTopNav": {
+    "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
+  },
+  "MainComponentSideMenuDashboard": {
+    "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
   }
 }

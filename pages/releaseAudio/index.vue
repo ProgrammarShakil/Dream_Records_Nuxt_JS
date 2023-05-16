@@ -13,7 +13,7 @@
         <!-- form  -->
         <div class="lg:w-3/3 w-full h-full px-2">
           <div>
-            <form>
+            <form @submit.prevent="formSubmit">
               <!-- release info  -->
               <div class="p-3 flex justify-between items-center">
                 <div class="">
@@ -25,9 +25,7 @@
                 <div>
                   <!-- submit or preview button on the top from -->
                   <button type="submit" class="rounded-md btn-primary">
-                    <!-- Preview -->
-                    <NuxtLink to="/releaseAudio/show">Preview</NuxtLink>  <!-- temporary -->
-                   
+                    Preview
                   </button>
                   <!-- /submit or preview button on the top from -->
                 </div>
@@ -49,9 +47,11 @@
                         >
                         <br />
                         <input
+                          v-model="formData.title"
                           class="cust-input"
                           id="release-title"
                           type="text"
+                          required
                         />
                       </div>
                       <!-- /input  -->
@@ -60,6 +60,7 @@
                         <label for="version-subtitle">Version/Subtitle </label>
                         <br />
                         <input
+                          v-model="formData.version"
                           class="cust-input"
                           id="version-subtitle"
                           type="text"
@@ -76,9 +77,11 @@
                             </label>
                             <br />
                             <input
+                              v-model="formData.primary_artist"
                               class="cust-input"
                               id="primary-artist"
                               type="text"
+                              required
                             />
                           </div>
                           <div class="absolute top-8 right-0">
@@ -94,6 +97,7 @@
                             <label for="featuring">Featuring </label>
                             <br />
                             <input
+                              v-model="formData.featuring"
                               class="cust-input"
                               id="featuring"
                               type="text"
@@ -112,6 +116,7 @@
                             <label for="remixer">Remixer </label>
                             <br />
                             <input
+                              v-model="formData.remixer"
                               class="cust-input"
                               id="remixer"
                               type="text"
@@ -131,9 +136,11 @@
                         >
                         <br />
                         <input
+                          v-model="formData.song_writer"
                           class="cust-input"
                           id="song-writer"
                           type="text"
+                          required
                         />
                         <div class="text-xs secondary-color pt-2">
                           Digital Audio Stores required Full First & Last Name
@@ -150,9 +157,11 @@
                             </label>
                             <br />
                             <input
+                              v-model="formData.composer"
                               class="cust-input"
                               id="composer"
                               type="text"
+                              required
                             />
                             <div class="text-xs secondary-color pt-2">
                               Digital Audio Stores required Full First & Last
@@ -175,9 +184,11 @@
                         >
                         <br />
                         <input
+                          v-model="formData.release_date"
                           class="cust-input"
                           id="main-release"
-                          type="text"
+                          type="date"
+                          required
                         />
                       </div>
                       <!-- /input  -->
@@ -188,6 +199,7 @@
                             <label for="arranger">Arranger </label>
                             <br />
                             <input
+                              v-model="formData.arranger"
                               class="cust-input"
                               id="arranger"
                               type="text"
@@ -206,6 +218,7 @@
                             <label for="producer">Producer </label>
                             <br />
                             <input
+                              v-model="formData.producer"
                               class="cust-input"
                               id="producer"
                               type="text"
@@ -225,9 +238,11 @@
                         >
                         <br />
                         <input
+                          v-model="formData.original_release_date"
                           class="cust-input"
                           id="original-release-date"
-                          type="text"
+                          type="date"
+                          required
                         />
                       </div>
                       <!-- /input  -->
@@ -239,9 +254,11 @@
                         >
                         <br />
                         <input
+                          v-model="formData.lyrics_language"
                           class="cust-input"
                           id="lyrics-language"
                           type="text"
+                          required
                         />
                       </div>
                       <!-- /input  -->
@@ -251,7 +268,13 @@
                           >Genre <span class="text-red-600">*</span></label
                         >
                         <br />
-                        <input class="cust-input" id="genre" type="text" />
+                        <input
+                          class="cust-input"
+                          id="genre"
+                          type="text"
+                          v-model="formData.genre"
+                          required
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
@@ -260,7 +283,13 @@
                           >SubGenre <span class="text-red-600">*</span></label
                         >
                         <br />
-                        <input class="cust-input" id="sub-genre" type="text" />
+                        <input
+                          class="cust-input"
+                          id="sub-genre"
+                          type="text"
+                          v-model="formData.subgenre"
+                          required
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
@@ -269,7 +298,13 @@
                           >Label Name <span class="text-red-600">*</span></label
                         >
                         <br />
-                        <input class="cust-input" id="label-name" type="text" />
+                        <input
+                          class="cust-input"
+                          id="label-name"
+                          type="text"
+                          v-model="formData.label_name"
+                          required
+                        />
                       </div>
                       <!-- /input  -->
                     </div>
@@ -281,10 +316,12 @@
                         >
                         <br />
                         <select
+                          v-model="formData.format"
                           id="format"
                           class="cust-input cust-select-input"
+                          required
                         >
-                          <option value="">option 1</option>
+                          <option value="default">option 1</option>
                         </select>
                       </div>
                       <!-- /input  -->
@@ -294,7 +331,13 @@
                           >℗ line <span class="text-red-600">*</span></label
                         >
                         <br />
-                        <input class="cust-input" id="p-line" type="text" />
+                        <input
+                          class="cust-input"
+                          id="p-line"
+                          type="text"
+                          v-model="formData.p_line"
+                          required
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
@@ -303,21 +346,37 @@
                           >© line <span class="text-red-600">*</span></label
                         >
                         <br />
-                        <input class="cust-input" id="c-line" type="text" />
+                        <input
+                          class="cust-input"
+                          id="c-line"
+                          type="text"
+                          v-model="formData.c_line"
+                          required
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
                       <div class="ml-3">
                         <label for="upc-ean">UPC/EAN</label>
                         <br />
-                        <input class="cust-input" id="upc-ean" type="text" />
+                        <input
+                          class="cust-input"
+                          id="upc-ean"
+                          type="text"
+                          v-model="formData.upc"
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
                       <div class="ml-3">
                         <label for="irc">ISRC</label>
                         <br />
-                        <input class="cust-input" id="irc" type="text" />
+                        <input
+                          class="cust-input"
+                          id="irc"
+                          type="text"
+                          v-model="formData.isrc"
+                        />
                       </div>
                       <!-- /input  -->
                       <!-- input  -->
@@ -328,10 +387,12 @@
                         >
                         <br />
                         <select
+                          v-model="formData.advisory"
                           id="parential-advisory"
                           class="cust-input cust-select-input"
+                          required
                         >
-                          <option value="">option 1</option>
+                          <option value="default">option 1</option>
                         </select>
                       </div>
                       <!-- /input  -->
@@ -342,6 +403,7 @@
                         >
                         <br />
                         <input
+                          v-model="formData.product_catalogue_number"
                           class="cust-input"
                           id="producer-catalog-number"
                           type="text"
@@ -367,10 +429,26 @@
                         <UploadIcon />
                       </div>
                       <div class="mt-4 ml-3 space-y-4">
-                        <div class="secondary-color">Audio Format</div>
-                        <div class="secondary-color">- WAV,16-bit</div>
+                        <div v-if="!formData.audio_file" class="space-y-4">
+                          <div class="secondary-color">Audio Format</div>
+                          <div class="secondary-color">- WAV,16-bit</div>
+                        </div>
+                        <div v-else class="secondary-color">
+                          {{ formData.audio_file.name }}
+                        </div>
                         <div class="flex justify-center items-center mt-6">
-                          <button class="rounded-md btn-primary">
+                          <input
+                            @change="fileUpload"
+                            type="file"
+                            allow="audio"
+                            ref="audio"
+                            hidden
+                          />
+                          <button
+                            @click="fileButtonClicked"
+                            type="button"
+                            class="rounded-md btn-primary"
+                          >
                             Upload Your Audio
                           </button>
                         </div>
@@ -386,11 +464,26 @@
                         <UploadIcon />
                       </div>
                       <div class="mt-4 ml-3 space-y-4">
-                        <div class="secondary-color">Your cover must be:</div>
-                        <div class="secondary-color">- Size: 3000*3000px</div>
-                        <div class="secondary-color">- Format: .jpeg</div>
+                        <div v-if="!formData.thumbnail" class="space-y-4">
+                          <div class="secondary-color">Your cover must be:</div>
+                          <div class="secondary-color">- Size: 3000*3000px</div>
+                          <div class="secondary-color">- Format: .jpeg</div>
+                        </div>
+                        <div v-else class="secondary-color">
+                          {{ formData.thumbnail.name }}
+                        </div>
                         <div class="flex justify-center items-center mt-6">
-                          <button class="rounded-md btn-primary">
+                          <input
+                            @change="thumbnailUpload"
+                            type="file"
+                            ref="thumbnail"
+                            hidden
+                          />
+                          <button
+                            @click="thumbnailButtonClicked"
+                            type="button"
+                            class="rounded-md btn-primary"
+                          >
                             Upload Cover
                           </button>
                         </div>
@@ -416,11 +509,84 @@
 export default {
   components: {
     SideMenuDashboard: () =>
-      import("@/components/MainComponent/SideMenuDashboard.vue"),
+      import('@/components/MainComponent/SideMenuDashboard.vue'),
     DashboardTopNav: () =>
-      import("@/components/MainComponent/DashboardTopNav.vue"),
-    UploadIcon: () => import("@/components/Icons/UploadIcon.vue"),
-    InputPlus: () => import("@/components/Icons/InputPlus.vue"),
+      import('@/components/MainComponent/DashboardTopNav.vue'),
+    UploadIcon: () => import('@/components/Icons/UploadIcon.vue'),
+    InputPlus: () => import('@/components/Icons/InputPlus.vue'),
+  },
+  data() {
+    return {
+      formData: {
+        title: '',
+        release_date: '',
+        format: 'default',
+        version: '',
+        arranger: '',
+        c_line: '',
+        primary_artist: '',
+        producer: '',
+        featuring: '',
+        original_release_date: '',
+        upc: '',
+        remixer: '',
+        lyrics_language: '',
+        isrc: '',
+        song_writer: '',
+        genre: '',
+        advisory: 'default',
+        composer: '',
+        subgenre: '',
+        producer_catelog_number: '',
+        label_name: '',
+        p_line: '',
+        audio_file: null,
+        audio_url: null,
+        thumbnail_url: null,
+        thumbnail: null,
+      },
+    };
+  },
+  mounted() {
+    this.$store.commit('songs/clearCurrent', { ...this.formData });
+  },
+  methods: {
+    fileButtonClicked() {
+      this.$refs.audio.click();
+    },
+    thumbnailButtonClicked() {
+      this.$refs.thumbnail.click();
+    },
+    fileUpload(e) {
+      try {
+        this.formData.audio_file = e.target.files[0];
+        this.formData.audio_url = URL.createObjectURL(e.target.files[0]);
+        console.log(
+          this.formData.audio_url,
+          URL.createObjectURL(e.target.files[0])
+        );
+        this.$toast.success('Successfully Uploaded Audio');
+      } catch (err) {
+        console.error(err);
+        this.$toast.error('Error in Uploading');
+      }
+    },
+    thumbnailUpload(e) {
+      try {
+        this.formData.thumbnail = e.target.files[0];
+        this.formData.thumbnail_url = URL.createObjectURL(
+          this.formData.thumbnail
+        );
+        this.$toast.success('Successfully Uploaded Cover');
+        console.log(this.formData.thumbnail);
+      } catch {
+        this.$toast.error('Error in Uploading');
+      }
+    },
+    formSubmit() {
+      this.$store.commit('songs/addSongToCurrent', this.formData);
+      this.$router.push('/releaseAudio/show');
+    },
   },
 };
 </script>
