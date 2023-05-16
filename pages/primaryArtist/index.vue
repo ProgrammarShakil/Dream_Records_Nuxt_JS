@@ -6,7 +6,7 @@
 
     <!-- content area -->
     <div
-      class="bg-dash ml-auto pb-6 h-screen lg:w-[75%] xl:w-[80%] 2xl:w-[85%]"
+      class="bg-dash ml-auto pb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]"
     >
       <!-- top nav area  -->
       <DashboardTopNav />
@@ -55,7 +55,7 @@
       <!-- table  -->
       <div class="mx-3">
         <table
-          class="w-full my-3 border-collapse border border-slate-400 rounded"
+          class="lg:w-full sm:w-3/4 my-3 border-collapse border border-slate-400 rounded"
         >
           <thead>
             <tr>

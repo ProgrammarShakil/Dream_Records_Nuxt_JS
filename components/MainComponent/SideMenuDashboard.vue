@@ -6,8 +6,8 @@
       <div>
         <div class="-mx-6 px-6 py-4">
           <div class="flex">
-            <Logo />
-            <div class="mx-2 font-bold text-xl primary-color">
+            <Logo class="cursor-pointer" />
+            <div class="mx-2 font-bold text-xl primary-color cursor-pointer">
               Dream records
             </div>
           </div>

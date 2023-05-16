@@ -17,9 +17,9 @@
           class="md:w-full rounded-xl p-4 border text-white border-gray-200 bg-gradient-to-b from-sky-600 to-sky-900 mb-3"
         >
           <div class="flex justify-between items-center">
-            <div><Volume /></div>
+            <div class="cursor-pointer"><Volume /></div>
             <div>Saturday & Sunday is our off day</div>
-            <div><Cross /></div>
+            <div class="cursor-pointer"><Cross /></div>
           </div>
         </div>
         <!-- /nav alert  -->
@@ -69,7 +69,7 @@
                 <div>
                   <!-- select option  -->
                   <div class="relative inline-block text-left">
-                    <div>
+                    <div @click="dropControll()">
                       <button
                         type="button"
                         class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
@@ -94,6 +94,7 @@
                     </div>
 
                     <div
+                      :class="{ custHide: optionControl }"
                       class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                       role="menu"
                       aria-orientation="vertical"
@@ -375,6 +376,8 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   components: {
     SideMenuDashboard: () =>
@@ -383,6 +386,15 @@ export default {
       import("@/components/MainComponent/DashboardTopNav.vue"),
     Volume: () => import("@/components/Icons/Volume.vue"),
     Cross: () => import("@/components/Icons/Cross.vue"),
+  },
+  setup() {
+    const optionControl = ref(true);
+
+    function dropControll() {
+      optionControl.value = !optionControl.value;
+    }
+
+    return { optionControl, dropControll };
   },
 };
 </script>
