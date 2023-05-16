@@ -6,8 +6,6 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
-- `<MainComponentDashboardTopNav>` | `<main-component-dashboard-top-nav>` (components/MainComponent/DashboardTopNav.vue)
-- `<MainComponentSideMenuDashboard>` | `<main-component-side-menu-dashboard>` (components/MainComponent/SideMenuDashboard.vue)
 - `<IconsActiveAudio>` | `<icons-active-audio>` (components/Icons/ActiveAudio.vue)
 - `<IconsActiveEdit>` | `<icons-active-edit>` (components/Icons/ActiveEdit.vue)
 - `<IconsActiveHome>` | `<icons-active-home>` (components/Icons/ActiveHome.vue)
@@ -35,3 +33,6 @@ You can directly use them in pages and other components without the need to impo
 - `<IconsTableFilterIcon>` | `<icons-table-filter-icon>` (components/Icons/TableFilterIcon.vue)
 - `<IconsUploadIcon>` | `<icons-upload-icon>` (components/Icons/UploadIcon.vue)
 - `<IconsVolume>` | `<icons-volume>` (components/Icons/Volume.vue)
+- `<MainComponentAlert>` | `<main-component-alert>` (components/MainComponent/Alert.vue)
+- `<MainComponentDashboardTopNav>` | `<main-component-dashboard-top-nav>` (components/MainComponent/DashboardTopNav.vue)
+- `<MainComponentSideMenuDashboard>` | `<main-component-side-menu-dashboard>` (components/MainComponent/SideMenuDashboard.vue)

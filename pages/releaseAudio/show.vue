@@ -20,8 +20,12 @@
           <!-- release submission -->
           <div class="flex">
             <div>
-              <button type="submit" class="rounded-md btn-outline-primary">
-                <NuxtLink to="/releaseAudio/show">Submit My Release</NuxtLink>
+              <button
+                type="submit"
+                class="rounded-md btn-outline-primary"
+                @click="submitSong"
+              >
+                Submit My Release
               </button>
             </div>
             <div>
@@ -66,49 +70,63 @@
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Release Title</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.title }}</div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Version/Subtitle</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.version }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Primary Artist</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.primary_artist }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Featuring</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.featuring }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Song Writer</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.song_writer }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Composer</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.composer }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Arranger</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.arranger }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Producer</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.producer }}
+                    </div>
                   </div>
                   <!-- flexed div  -->
                 </div>
@@ -120,49 +138,61 @@
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Original Release Date</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.original_release_date }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Remixer</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.remixer }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Lyrics Language</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.lyrics_language }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Genre</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.genre }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Subgenre</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.subgenre }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Label Name</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.label_name }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Format</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.format }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Parental Advisory</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.advisory }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                 </div>
@@ -174,31 +204,33 @@
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>℗ line</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.p_line }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>© line</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.c_line }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>UPC/EAN</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.upc }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>ISRC</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">: {{ getCurrent.isrc }}</div>
                   </div>
                   <!-- /flexed div  -->
                   <!-- flexed div  -->
                   <div class="flex justify-between">
                     <div>Producer Catalogue Number</div>
-                    <div class="secondary-color">: Empty</div>
+                    <div class="secondary-color">
+                      : {{ getCurrent.producer_catelog_number }}
+                    </div>
                   </div>
                   <!-- /flexed div  -->
                 </div>
@@ -221,14 +253,21 @@
                 <img src="~/assets/img/audio-img-icon.png" alt="" srcset="" />
               </div>
               <div class="mt-8 mb-3 ml-3 flex justify-center items-center">
-                <p class="secondary-color">Song name here</p>
+                <p class="secondary-color" v-if="getCurrent.audio_file.name">
+                  {{ getCurrent.audio_file.name }}
+                </p>
+                <audio
+                  :src="getCurrent.audio_url"
+                  controls
+                  v-if="getCurrent.audio_url"
+                ></audio>
               </div>
             </div>
             <!-- /upload audio  -->
             <!-- cover song  -->
             <div class="h-full rounded-md p-6 border border-gray-200 bg-white">
               <div class="flex justify-center items-center">
-                <img src="~/assets/img/cover-song.png" alt="" />
+                <img :src="getCurrent.thumbnail_url" alt="Cover" />
               </div>
             </div>
             <!-- /cover song  -->
@@ -238,7 +277,7 @@
       </div>
       <!-- /release info details -->
       <!-- Release Information errors -->
-      <div class="lg:-mt-4">
+      <div v-if="false" class="lg:-mt-4">
         <div class="flex ml-3">
           <div class="font-medium">Release Information</div>
           <div class="ml-3">
@@ -255,7 +294,7 @@
           <!-- flexed div  -->
           <div class="flex justify-between">
             <div>Main Release Date</div>
-            <div class="secondary-color">: Empty</div>
+            <div class="secondary-color">: {{ getCurrent.release_date }}</div>
           </div>
           <!-- /flexed div  -->
         </div>
@@ -271,11 +310,22 @@
 export default {
   components: {
     SideMenuDashboard: () =>
-      import("@/components/MainComponent/SideMenuDashboard.vue"),
+      import('@/components/MainComponent/SideMenuDashboard.vue'),
     DashboardTopNav: () =>
-      import("@/components/MainComponent/DashboardTopNav.vue"),
-    RightIcon: () => import("@/components/Icons/RightIcon.vue"),
-    ErrorIcon: () => import("@/components/Icons/ErrorIcon.vue"),
+      import('@/components/MainComponent/DashboardTopNav.vue'),
+    RightIcon: () => import('@/components/Icons/RightIcon.vue'),
+    ErrorIcon: () => import('@/components/Icons/ErrorIcon.vue'),
+  },
+  computed: {
+    getCurrent() {
+      return this.$store.state.songs.currentSong;
+    },
+  },
+  methods: {
+    submitSong() {
+      this.$store.commit('songs/addNewSong', this.getCurrent);
+      this.$router.push('/catalog');
+    },
   },
 };
 </script>

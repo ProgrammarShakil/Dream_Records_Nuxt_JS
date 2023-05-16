@@ -18,9 +18,10 @@
             <NuxtLink
               to="/dashboard"
               aria-label="dashboard"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl primary-color from-sky-600 to-cyan-400"
-            >
-              <ActiveHome />
+              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl"
+              :class="$route.path.split('/')[1] === 'dashboard'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
+              >
+              <ActiveHome :color="$route.path.split('/')[1] === 'dashboard' ? '#783EFD' : '#8A8B9F' "/>
               <span class="-mr-1 font-medium">Dashboard</span>
             </NuxtLink>
           </li>
@@ -28,59 +29,65 @@
           <li>
             <NuxtLink
               to="/releaseAudio"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
-            >
-              <InactiveReleaseAudio />
+              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl "
+              :class="$route.path.split('/')[1] === 'releaseAudio'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
+              >
+              <InactiveReleaseAudio :color="$route.path.split('/')[1] === 'releaseAudio'?'#783EFD':'#8A8B9F'"/>
               <span class="-mr-1 font-medium">Release Audio</span>
             </NuxtLink>
           </li>
-
+          
           <li>
             <NuxtLink
-              to="/catalog"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
+            to="/catalog"
+            class="relative px-4 py-2 flex items-center space-x-4 rounded-xl"
+            :class="$route.path.split('/')[1] === 'catalog'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
             >
-              <InactiveCatalog />
-              <span class="-mr-1 font-medium">Catalog</span>
-            </NuxtLink>
+            <InactiveCatalog :color="$route.path.split('/')[1] === 'catalog'?'#783EFD':'#8A8B9F'"/>
+            <span class="-mr-1 font-medium">Catalog</span>
+          </NuxtLink>
           </li>
-
+          
           <li>
             <NuxtLink
               to="/analytics"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
-            >
-              <InactiveAnalytics />
+              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl"
+              :class="$route.path.split('/')[1] === 'analytics'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
+              >
+              <InactiveAnalytics :color="$route.path.split('/')[1] === 'analytics'?'#783EFD':'#8A8B9F'"/>
               <span class="-mr-1 font-medium">Analytics</span>
             </NuxtLink>
           </li>
 
           <li>
             <NuxtLink
-              to="/primaryArtist"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
+            to="/primaryArtist"
+            class="relative px-4 py-2 flex items-center space-x-4 rounded-xl"
+            :class="$route.path.split('/')[1] === 'primaryArtist'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
             >
-              <InactivePrimaryArtist />
-              <span class="-mr-1 font-medium">Primary Artist</span>
-            </NuxtLink>
-          </li>
-
-          <li>
-            <NuxtLink
-              to="/youtubeRequest/addClaimRelease"
-              class="relative px-4 py-2 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
-            >
-              <InactiveYoutube />
-              <span class="-mr-1 font-medium">Youtube Request</span>
-            </NuxtLink>
-          </li>
-
-          <li>
-            <NuxtLink
-              to="/earning"
-              class="relative px-4 py-1 flex items-center space-x-4 rounded-xl secondary-color from-sky-600 to-cyan-400"
-            >
-              <InactiveEarning />
+            <InactivePrimaryArtist :color="$route.path.split('/')[1] === 'primaryArtist'?'#783EFD':'#8A8B9F'"/>
+            <span class="-mr-1 font-medium">Primary Artist</span>
+          </NuxtLink>
+        </li>
+        
+        <li>
+          <NuxtLink
+          to="/youtubeRequest/addClaimRelease"
+          class="relative px-4 py-2 flex items-center space-x-4 rounded-xl"
+          :class="$route.path.split('/')[1] === 'youtubeRequest'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
+          >
+          <InactiveYoutube :color="$route.path.split('/')[1] === 'youtubeRequest'?'#783EFD':'#8A8B9F'"/>
+          <span class="-mr-1 font-medium">Youtube Request</span>
+        </NuxtLink>
+      </li>
+      
+      <li>
+        <NuxtLink
+        to="/earning"
+        class="relative px-4 py-1 flex items-center space-x-4 rounded-xl"
+        :class="$route.path.split('/')[1] === 'earning'?' primary-color from-sky-600 to-cyan-400':'secondary-color from-sky-600 to-cyan-400'"
+        >
+              <InactiveEarning :color="$route.path.split('/')[1] === 'earning'?'#783EFD':'#8A8B9F'"/>
               <span class="-mr-1 font-medium">Earning</span>
             </NuxtLink>
           </li>
@@ -118,6 +125,7 @@ export default {
     ActiveAudio: () => import("@/components/Icons/ActiveAudio.vue"),
     ActiveEdit: () => import("@/components/Icons/ActiveEdit.vue"),
   },
+ 
 };
 </script>
 

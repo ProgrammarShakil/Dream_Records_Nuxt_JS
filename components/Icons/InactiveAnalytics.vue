@@ -17,8 +17,16 @@
         fill-rule="evenodd"
         clip-rule="evenodd"
         d="M16.979 15.1997V12.1671L21.9948 16.1829L16.979 20.1635V17.1997H14.8992H14.485L14.1921 16.9068L4.98105 7.69579H2V5.69579H5.39526H5.80948L6.10237 5.98868L15.3134 15.1997H16.979Z"
-        fill="#8A8B9F"
+        :fill="color"
       />
     </svg>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    color: String,
+    default: '#8A8B9F'
+  }
+}
+</script>

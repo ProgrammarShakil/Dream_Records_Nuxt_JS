@@ -4,19 +4,19 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _3bc9c298 = () => interopDefault(import('../pages/analytics/index.vue' /* webpackChunkName: "pages/analytics/index" */))
-const _73f39d2b = () => interopDefault(import('../pages/catalog/index.vue' /* webpackChunkName: "pages/catalog/index" */))
-const _ce2dcfb4 = () => interopDefault(import('../pages/dashboard/index.vue' /* webpackChunkName: "pages/dashboard/index" */))
-const _069908dc = () => interopDefault(import('../pages/earning/index.vue' /* webpackChunkName: "pages/earning/index" */))
-const _59c0f88a = () => interopDefault(import('../pages/primaryArtist/index.vue' /* webpackChunkName: "pages/primaryArtist/index" */))
-const _a2edccda = () => interopDefault(import('../pages/releaseAudio/index.vue' /* webpackChunkName: "pages/releaseAudio/index" */))
-const _7d6b7034 = () => interopDefault(import('../pages/catalog/show.vue' /* webpackChunkName: "pages/catalog/show" */))
-const _fee0879e = () => interopDefault(import('../pages/primaryArtist/edit.vue' /* webpackChunkName: "pages/primaryArtist/edit" */))
-const _4580c6cc = () => interopDefault(import('../pages/releaseAudio/show.vue' /* webpackChunkName: "pages/releaseAudio/show" */))
-const _8f4881ec = () => interopDefault(import('../pages/youtubeRequest/addClaimRelease.vue' /* webpackChunkName: "pages/youtubeRequest/addClaimRelease" */))
-const _87bbe2d8 = () => interopDefault(import('../pages/youtubeRequest/artistChannelReq.vue' /* webpackChunkName: "pages/youtubeRequest/artistChannelReq" */))
-const _f4ecbe48 = () => interopDefault(import('../pages/youtubeRequest/contentIdReq.vue' /* webpackChunkName: "pages/youtubeRequest/contentIdReq" */))
-const _aae1aabe = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _da2dea2c = () => interopDefault(import('../pages/analytics/index.vue' /* webpackChunkName: "pages/analytics/index" */))
+const _e6e65c06 = () => interopDefault(import('../pages/catalog/index.vue' /* webpackChunkName: "pages/catalog/index" */))
+const _1fef3f10 = () => interopDefault(import('../pages/dashboard/index.vue' /* webpackChunkName: "pages/dashboard/index" */))
+const _1f323dae = () => interopDefault(import('../pages/earning/index.vue' /* webpackChunkName: "pages/earning/index" */))
+const _7dde530d = () => interopDefault(import('../pages/primaryArtist/index.vue' /* webpackChunkName: "pages/primaryArtist/index" */))
+const _2fea1801 = () => interopDefault(import('../pages/releaseAudio/index.vue' /* webpackChunkName: "pages/releaseAudio/index" */))
+const _01f0ba9f = () => interopDefault(import('../pages/primaryArtist/edit.vue' /* webpackChunkName: "pages/primaryArtist/edit" */))
+const _51ef429e = () => interopDefault(import('../pages/releaseAudio/show.vue' /* webpackChunkName: "pages/releaseAudio/show" */))
+const _b306ef10 = () => interopDefault(import('../pages/youtubeRequest/addClaimRelease.vue' /* webpackChunkName: "pages/youtubeRequest/addClaimRelease" */))
+const _dbcb1a34 = () => interopDefault(import('../pages/youtubeRequest/artistChannelReq.vue' /* webpackChunkName: "pages/youtubeRequest/artistChannelReq" */))
+const _65f4fe2e = () => interopDefault(import('../pages/youtubeRequest/contentIdReq.vue' /* webpackChunkName: "pages/youtubeRequest/contentIdReq" */))
+const _b79da0b6 = () => interopDefault(import('../pages/catalog/_id.vue' /* webpackChunkName: "pages/catalog/_id" */))
+const _92e95d1a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -31,55 +31,55 @@ export const routerOptions = {
 
   routes: [{
     path: "/analytics",
-    component: _3bc9c298,
+    component: _da2dea2c,
     name: "analytics"
   }, {
     path: "/catalog",
-    component: _73f39d2b,
+    component: _e6e65c06,
     name: "catalog"
   }, {
     path: "/dashboard",
-    component: _ce2dcfb4,
+    component: _1fef3f10,
     name: "dashboard"
   }, {
     path: "/earning",
-    component: _069908dc,
+    component: _1f323dae,
     name: "earning"
   }, {
     path: "/primaryArtist",
-    component: _59c0f88a,
+    component: _7dde530d,
     name: "primaryArtist"
   }, {
     path: "/releaseAudio",
-    component: _a2edccda,
+    component: _2fea1801,
     name: "releaseAudio"
   }, {
-    path: "/catalog/show",
-    component: _7d6b7034,
-    name: "catalog-show"
-  }, {
     path: "/primaryArtist/edit",
-    component: _fee0879e,
+    component: _01f0ba9f,
     name: "primaryArtist-edit"
   }, {
     path: "/releaseAudio/show",
-    component: _4580c6cc,
+    component: _51ef429e,
     name: "releaseAudio-show"
   }, {
     path: "/youtubeRequest/addClaimRelease",
-    component: _8f4881ec,
+    component: _b306ef10,
     name: "youtubeRequest-addClaimRelease"
   }, {
     path: "/youtubeRequest/artistChannelReq",
-    component: _87bbe2d8,
+    component: _dbcb1a34,
     name: "youtubeRequest-artistChannelReq"
   }, {
     path: "/youtubeRequest/contentIdReq",
-    component: _f4ecbe48,
+    component: _65f4fe2e,
     name: "youtubeRequest-contentIdReq"
   }, {
+    path: "/catalog/:id",
+    component: _b79da0b6,
+    name: "catalog-id"
+  }, {
     path: "/",
-    component: _aae1aabe,
+    component: _92e95d1a,
     name: "index"
   }],
 

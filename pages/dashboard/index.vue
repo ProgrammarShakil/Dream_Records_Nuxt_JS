@@ -13,15 +13,11 @@
 
       <div class="px-3 pt-6 2xl:container">
         <!-- /nav alert  -->
-        <div
-          class="md:w-full rounded-xl p-4 border text-white border-gray-200 bg-gradient-to-b from-sky-600 to-sky-900 mb-3"
-        >
-          <div class="flex justify-between items-center">
-            <div class="cursor-pointer"><Volume /></div>
-            <div>Saturday & Sunday is our off day</div>
-            <div class="cursor-pointer"><Cross /></div>
-          </div>
-        </div>
+        <Alert
+          v-if="getDashboardNotice.shown"
+          :message="getDashboardNotice.message"
+          @closed="$store.commit('settings/closeDashboardNotice')"
+        />
         <!-- /nav alert  -->
 
         <!-- content center  -->
@@ -30,7 +26,7 @@
             <!-- 3 in cards  -->
             <div class="lg:flex lg:space-x-4 text-white">
               <div
-                class="lg:w-1/3 w-full h-full py-6 px-6 sm:mb-3 rounded-xl border border-gray-200 bg-gradient-to-b from-cyan-400 to-blue-600"
+                class="lg:w-1/3 lg:min-h-[160px] h-full py-6 px-6 sm:mb-3 rounded-xl border border-gray-200 bg-gradient-to-b from-cyan-400 to-blue-600"
               >
                 <h5 class="text-xl">Total Created Audio</h5>
                 <div class="my-3">
@@ -39,7 +35,7 @@
               </div>
 
               <div
-                class="lg:w-1/3 w-full h-full py-6 px-6 sm:mb-3 rounded-xl border border-gray-200 bg-gradient-to-b from-teal-400 to-teal-800"
+                class="lg:w-1/3 lg:min-h-[160px] h-full py-6 px-6 sm:mb-3 rounded-xl border border-gray-200 bg-gradient-to-b from-teal-400 to-teal-800"
               >
                 <h5 class="text-xl">Total Pending Audio</h5>
                 <div class="my-3">
@@ -48,7 +44,7 @@
               </div>
 
               <div
-                class="lg:w-1/3 w-full h-full py-6 px-6 rounded-xl border border-gray-200 bg-gradient-to-b from-rose-400 to-rose-600"
+                class="lg:w-1/3 lg:min-h-[160px] h-full py-6 px-6 sm:mb-3 rounded-xl border border-gray-200 bg-gradient-to-b from-rose-400 to-rose-600"
               >
                 <h5 class="text-xl">Total Final Release Audio</h5>
                 <div class="my-3">
@@ -163,45 +159,40 @@
               <hr />
               <div>
                 <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <hr />
-                <!-- row -->
                 <div
-                  class="flex justify-between p-3 items-center bg-indigo-600"
+                  class="flex justify-between p-3 items-center"
+                  v-for="item in [1, 2, 3]"
+                  @mouseover="hoveredCorrection = item"
+                  @mouseleave="hoveredCorrection = null"
+                  :key="item"
+                  :class="
+                    hoveredCorrection === item ? 'bg-indigo-600 rounded-md' : ''
+                  "
                 >
                   <div class="flex justify-start space-x-3 items-center">
-                    <div><ActiveAudio /></div>
-                    <div class="text-white">Lolipop</div>
+                    <div>
+                      <InactiveAudio
+                        :color="hoveredCorrection === item ? '#fff' : '#8A8B9F'"
+                      />
+                    </div>
+                    <div
+                      :class="
+                        hoveredCorrection === item
+                          ? 'text-white'
+                          : 'secondary-color'
+                      "
+                    >
+                      Lolipop
+                    </div>
                   </div>
-                  <div><ActiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
+                  <div>
+                    <InactiveEdit
+                      :color="hoveredCorrection === item ? '#fff' : '#8A8B9F'"
+                    />
                   </div>
-                  <div><InactiveEdit /></div>
                 </div>
                 <!-- /row -->
                 <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
               </div>
             </div>
             <!-- /Correction Requested  -->
@@ -225,64 +216,40 @@
               <hr />
               <div>
                 <!-- row -->
-                <div class="flex justify-between p-3 items-center">
+                <div
+                  class="flex justify-between p-3 items-center"
+                  v-for="item in [1, 2, 3, 4, 5]"
+                  @mouseover="hoveredDrafts = item"
+                  @mouseleave="hoveredDrafts = null"
+                  :key="item"
+                  :class="
+                    hoveredDrafts === item ? 'bg-indigo-600 rounded-md' : ''
+                  "
+                >
                   <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
+                    <div>
+                      <InactiveAudio
+                        :color="hoveredDrafts === item ? '#fff' : '#8A8B9F'"
+                      />
+                    </div>
+                    <div
+                      :class="
+                        hoveredDrafts === item
+                          ? 'text-white'
+                          : 'secondary-color'
+                      "
+                    >
+                      Lolipop
+                    </div>
                   </div>
-                  <div><InactiveEdit /></div>
+                  <div>
+                    <InactiveEdit
+                      :color="hoveredDrafts === item ? '#fff' : '#8A8B9F'"
+                    />
+                  </div>
                 </div>
                 <!-- /row -->
                 <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
-                <hr />
-                <!-- row -->
-                <div class="flex justify-between p-3 items-center">
-                  <div class="flex justify-start space-x-3 items-center">
-                    <div><InactiveAudio /></div>
-                    <div class="secondary-color">Lolipop</div>
-                  </div>
-                  <div><InactiveEdit /></div>
-                </div>
-                <!-- /row -->
               </div>
             </div>
             <!-- /Drafts -->
@@ -296,64 +263,18 @@
         <div
           class="h-full py-3 mt-3 mx-3 px-3 rounded-xl border border-gray-200 bg-white"
         >
-          <h5 class="text-xl text-gray-900 font-medium">Latest Blog</h5>
+          <h5 class="text-xl text-gray-900 font-medium mx-4 py-4">
+            Latest Blog
+          </h5>
 
           <div
-            class="lg:flex w-72 lg:w-full mx-auto justify-center items-center lg:space-x-2 p-3"
+            class="lg:flex lg:flex-wrap w-72 lg:w-full mx-auto justify-center items-center lg:space-x-2 gap-y-2 p-3"
           >
-            <div class="sm:mb-5 h-full">
-              <div>
-                <img src="~/assets/img/spotify-music.png" alt="" />
-              </div>
-              <div class="bg-gray-950 text-white rounded-b-xl">
-                <div class="p-2">
-                  <p class="text-sm text-slate-300 mt-4">April 12, 20</p>
-                  <h3 class="mt-4 font-medium">
-                    How To Get Verified On Spotify
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="sm:mb-5 h-full">
-              <div>
-                <img src="~/assets/img/spotify-music.png" alt="" />
-              </div>
-              <div class="bg-gray-950 text-white rounded-b-xl">
-                <div class="p-2">
-                  <p class="text-sm text-slate-300 mt-4">April 12, 20</p>
-                  <h3 class="mt-4 font-medium">
-                    How To Get Verified On Spotify
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="sm:mb-5 h-full">
-              <div>
-                <img src="~/assets/img/spotify-music.png" alt="" />
-              </div>
-              <div class="bg-gray-950 text-white rounded-b-xl">
-                <div class="p-2">
-                  <p class="text-sm text-slate-300 mt-4">April 12, 20</p>
-                  <h3 class="mt-4 font-medium">
-                    How To Get Verified On Spotify
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="sm:mb-5 h-full">
-              <div>
-                <img src="~/assets/img/spotify-music.png" alt="" />
-              </div>
-              <div class="bg-gray-950 text-white rounded-b-xl">
-                <div class="p-2">
-                  <p class="text-sm text-slate-300 mt-4">April 12, 20</p>
-                  <h3 class="mt-4 font-medium">
-                    How To Get Verified On Spotify
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div class="sm:mb-5 h-full">
+            <div
+              class="sm:mb-5 h-full lg:w-1/5"
+              v-for="item in [1, 2, 3, 4, 5, 6, 7]"
+              :key="item"
+            >
               <div>
                 <img src="~/assets/img/spotify-music.png" alt="" />
               </div>
@@ -376,16 +297,28 @@
 </template>
 
 <script>
-import { ref } from "vue";
-
+import { ref } from 'vue';
 export default {
   components: {
     SideMenuDashboard: () =>
-      import("@/components/MainComponent/SideMenuDashboard.vue"),
+      import('@/components/MainComponent/SideMenuDashboard.vue'),
     DashboardTopNav: () =>
-      import("@/components/MainComponent/DashboardTopNav.vue"),
-    Volume: () => import("@/components/Icons/Volume.vue"),
-    Cross: () => import("@/components/Icons/Cross.vue"),
+      import('@/components/MainComponent/DashboardTopNav.vue'),
+
+    Alert: () => import('@/components/MainComponent/Alert.vue'),
+    InactiveAudio: () => import('@/components/Icons/InactiveAudio.vue'),
+    InactiveEdit: () => import('@/components/Icons/InactiveEdit.vue'),
+  },
+  computed: {
+    getDashboardNotice() {
+      return this.$store.state.settings.dashboard_notice;
+    },
+  },
+  data() {
+    return {
+      hoveredCorrection: null,
+      hoveredDrafts: null,
+    };
   },
   setup() {
     const optionControl = ref(true);
