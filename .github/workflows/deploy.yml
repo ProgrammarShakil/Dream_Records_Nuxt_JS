@@ -1,0 +1,26 @@
+name: Deploy On Server
+
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+      - name: deploy main
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SERVER_IP }}
+          username: ${{ secrets.SERVER_HOSTNAME }}
+          key: ${{ secrets.KEY}}
+          # port: ${{ secrets.PORT }}
+          script: |
+            pwd
+            cd /root/nuxt_sites/ai-bot-dialer
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart all

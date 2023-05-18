@@ -1,35 +1,16 @@
 {
-    // Set the default formatter for JavaScript files
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-  
-    // Enable auto-fix on save for all JavaScript and Vue files
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.stylelint": true
-    },
-    // Enable format on save for all files
-    "editor.formatOnSave": true,
-    // Adjust the width of the scroll and preview pan
-    "workbench.list.smoothScrolling": true,
-    "workbench.editor.sidePreview.width": 0.1,
-    // Configure ESLint
-    "eslint.validate": ["javascript", "vue"],
-  
-    // Configure Prettier
-    "prettier.semi": true,
-    "prettier.singleQuote": true,
-  
-    // Enable Volar extension
-    "vetur.experimental.templateInterpolationService": true,
-  
-    // Set the Tailwind CSS configuration file
-    "tailwindCSS.emmetCompletions": true,
-    "tailwindCSS.experimental.classRegex": ["tw`([^`]*)", "class=\"([^\"]*)"],
-    "tailwindCSS.experimental.extendPreflight": true,
-    "tailwindCSS.experimental.colorDecorators": true,
-    "tailwindCSS.experimental.debugScreens": true,
-    "tailwindCSS.experimental.cssVariableInjection": true,
-    "tailwindCSS.configFile": "./tailwind.config.js",
-    "vue.codeActions.savingTimeLimit": 5000
-  }
-  
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "editor.formatOnSave": true,
+  "workbench.list.smoothScrolling": true,
+  "workbench.editor.sidePreview.width": 0.1,
+  "eslint.validate": ["javascript", "vue"],
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "vetur.format.enable": true,
+  "vetur.validation.template": false,
+  "vue.codeActions.savingTimeLimit": 10000
+}
