@@ -19,7 +19,7 @@ jobs:
           # port: ${{ secrets.PORT }}
           script: |
             pwd
-            cd /root/nuxt_sites/ai-bot-dialer
+            cd /root/Dream-Records
             git pull origin main
             npm install
             npm run build
