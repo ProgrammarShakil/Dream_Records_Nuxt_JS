@@ -1,13 +1,21 @@
 <template>
   <div>
-    <div class="sticky z-10 top-0 h-16 border-b bg-white lg:py-2.5">
+    <div class="sticky z-10 top-0 h-16 border-b bg-white md:py-2.5">
       <div
-        class="px-6 flex items-center justify-between space-x-4 2xl:container"
+        class="px-6 flex mt-2 md:mt-0 items-center justify-between space-x-4 2xl:container"
       >
-        <h5 hidden class="text-2xl text-gray-600 font-medium lg:block">
+        <h5
+          :class="sidebar ? 'md:block' : 'md:hidden'"
+          class="text-2xl text-gray-600 font-medium"
+          @click="$emit('closeSidebar')"
+        >
           <Back class="cursor-pointer" />
         </h5>
-        <button class="w-12 h-16 -mr-2 border-r lg:hidden">
+        <button
+          :class="!sidebar ? 'block' : 'hidden'"
+          @click="$emit('openSidebar')"
+        >
+          <!-- class="w-8 h-8" -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 my-auto"
@@ -23,13 +31,22 @@
             />
           </svg>
         </button>
+        <div
+          class="bg-gray-200 text-blue-800 py-1 px-3 rounded-md w-[70%] text-xs hidden lg:block"
+        >
+          <marquee behavior="" direction="">
+            {{ getDashboardNotice.message }}
+          </marquee>
+        </div>
         <div class="flex space-x-4">
           <!--search bar -->
-          <div class="secondary-color mt-2 cursor-pointer">Mahfuzur R.</div>
+          <div class="secondary-color text-sm mt-2 cursor-pointer">
+            Mahfuzur R.
+          </div>
           <!--/search bar -->
           <button
             aria-label="search"
-            class="w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden"
+            class="hidden w-10 h-10 rounded-xl border bg-gray-100 focus:bg-gray-100 active:bg-gray-200 md:hidden"
           >
             <svg
               xmlns="http://ww50w3.org/2000/svg"
@@ -57,9 +74,28 @@
 
 <script>
 export default {
-  components: {
-    Back: () => import("@/components/Icons/Back.vue"),
-    Settings: () => import("@/components/Icons/Settings.vue"),
+  props: {
+    sidebar: {
+      type: Boolean,
+      required: true,
+    },
   },
+  components: {
+    Back: () => import('@/components/Icons/Back.vue'),
+    Settings: () => import('@/components/Icons/Settings.vue'),
+  },
+  computed: {
+    getDashboardNotice() {
+      return this.$store.state.settings.dashboard_notice;
+    },
+    // currentWidth() {
+    //   return window.innerWidth;
+    // },
+  },
+  // watch: {
+  //   currentWidth() {
+  //     console.log(this.currentWidth);
+  //   },
+  // },
 };
 </script>

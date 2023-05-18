@@ -83,10 +83,19 @@
   "MainComponentAlert": {
     "description": "Auto imported from components/MainComponent/Alert.vue"
   },
+  "MainComponentDashCard": {
+    "description": "Auto imported from components/MainComponent/DashCard.vue"
+  },
   "MainComponentDashboardTopNav": {
     "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
   },
+  "MainComponentListCard": {
+    "description": "Auto imported from components/MainComponent/ListCard.vue"
+  },
   "MainComponentSideMenuDashboard": {
     "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
+  },
+  "MainComponentTracks": {
+    "description": "Auto imported from components/MainComponent/Tracks.vue"
   }
 }

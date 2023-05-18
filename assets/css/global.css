@@ -1,5 +1,13 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
 .primary-color {
   color: #783efd;
+}
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .secondary-color {
   color: #8a8b9f;

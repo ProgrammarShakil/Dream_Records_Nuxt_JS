@@ -26,8 +26,11 @@ export { default as IconsTableFilterIcon } from '../../components/Icons/TableFil
 export { default as IconsUploadIcon } from '../../components/Icons/UploadIcon.vue'
 export { default as IconsVolume } from '../../components/Icons/Volume.vue'
 export { default as MainComponentAlert } from '../../components/MainComponent/Alert.vue'
+export { default as MainComponentDashCard } from '../../components/MainComponent/DashCard.vue'
 export { default as MainComponentDashboardTopNav } from '../../components/MainComponent/DashboardTopNav.vue'
+export { default as MainComponentListCard } from '../../components/MainComponent/ListCard.vue'
 export { default as MainComponentSideMenuDashboard } from '../../components/MainComponent/SideMenuDashboard.vue'
+export { default as MainComponentTracks } from '../../components/MainComponent/Tracks.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

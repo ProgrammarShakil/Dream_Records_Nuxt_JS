@@ -34,5 +34,8 @@ You can directly use them in pages and other components without the need to impo
 - `<IconsUploadIcon>` | `<icons-upload-icon>` (components/Icons/UploadIcon.vue)
 - `<IconsVolume>` | `<icons-volume>` (components/Icons/Volume.vue)
 - `<MainComponentAlert>` | `<main-component-alert>` (components/MainComponent/Alert.vue)
+- `<MainComponentDashCard>` | `<main-component-dash-card>` (components/MainComponent/DashCard.vue)
 - `<MainComponentDashboardTopNav>` | `<main-component-dashboard-top-nav>` (components/MainComponent/DashboardTopNav.vue)
+- `<MainComponentListCard>` | `<main-component-list-card>` (components/MainComponent/ListCard.vue)
 - `<MainComponentSideMenuDashboard>` | `<main-component-side-menu-dashboard>` (components/MainComponent/SideMenuDashboard.vue)
+- `<MainComponentTracks>` | `<main-component-tracks>` (components/MainComponent/Tracks.vue)
