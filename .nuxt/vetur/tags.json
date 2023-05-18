@@ -1,4 +1,13 @@
 {
+  "MainComponentAlert": {
+    "description": "Auto imported from components/MainComponent/Alert.vue"
+  },
+  "MainComponentDashboardTopNav": {
+    "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
+  },
+  "MainComponentSideMenuDashboard": {
+    "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
+  },
   "IconsActiveAudio": {
     "description": "Auto imported from components/Icons/ActiveAudio.vue"
   },
@@ -8,8 +17,17 @@
   "IconsActiveHome": {
     "description": "Auto imported from components/Icons/ActiveHome.vue"
   },
+  "IconsAnalytics": {
+    "description": "Auto imported from components/Icons/Analytics.vue"
+  },
+  "IconsAudio": {
+    "description": "Auto imported from components/Icons/Audio.vue"
+  },
   "IconsBack": {
     "description": "Auto imported from components/Icons/Back.vue"
+  },
+  "IconsCatalog": {
+    "description": "Auto imported from components/Icons/Catalog.vue"
   },
   "IconsCorrectionRequest": {
     "description": "Auto imported from components/Icons/CorrectionRequest.vue"
@@ -20,8 +38,17 @@
   "IconsDrafts": {
     "description": "Auto imported from components/Icons/Drafts.vue"
   },
+  "IconsEarning": {
+    "description": "Auto imported from components/Icons/Earning.vue"
+  },
+  "IconsEdit": {
+    "description": "Auto imported from components/Icons/Edit.vue"
+  },
   "IconsErrorIcon": {
     "description": "Auto imported from components/Icons/ErrorIcon.vue"
+  },
+  "IconsHome": {
+    "description": "Auto imported from components/Icons/Home.vue"
   },
   "IconsInactiveAnalytics": {
     "description": "Auto imported from components/Icons/InactiveAnalytics.vue"
@@ -56,6 +83,12 @@
   "IconsLogo": {
     "description": "Auto imported from components/Icons/Logo.vue"
   },
+  "IconsPrimaryArtist": {
+    "description": "Auto imported from components/Icons/PrimaryArtist.vue"
+  },
+  "IconsReleaseAudio": {
+    "description": "Auto imported from components/Icons/ReleaseAudio.vue"
+  },
   "IconsRightArrowIcon": {
     "description": "Auto imported from components/Icons/RightArrowIcon.vue"
   },
@@ -80,13 +113,7 @@
   "IconsVolume": {
     "description": "Auto imported from components/Icons/Volume.vue"
   },
-  "MainComponentAlert": {
-    "description": "Auto imported from components/MainComponent/Alert.vue"
-  },
-  "MainComponentDashboardTopNav": {
-    "description": "Auto imported from components/MainComponent/DashboardTopNav.vue"
-  },
-  "MainComponentSideMenuDashboard": {
-    "description": "Auto imported from components/MainComponent/SideMenuDashboard.vue"
+  "IconsYoutube": {
+    "description": "Auto imported from components/Icons/Youtube.vue"
   }
 }

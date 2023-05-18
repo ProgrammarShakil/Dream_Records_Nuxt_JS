@@ -2,92 +2,79 @@
   {
     "name": "analytics",
     "path": "/analytics",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/analytics/index.vue",
-    "chunkName": "pages/analytics/index",
-    "_name": "_da2dea2c"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/analytics/index.vue",
+    "chunkName": "pages/analytics/index"
   },
   {
     "name": "catalog",
     "path": "/catalog",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/catalog/index.vue",
-    "chunkName": "pages/catalog/index",
-    "_name": "_e6e65c06"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/catalog/index.vue",
+    "chunkName": "pages/catalog/index"
   },
   {
     "name": "dashboard",
     "path": "/dashboard",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/dashboard/index.vue",
-    "chunkName": "pages/dashboard/index",
-    "_name": "_1fef3f10"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/dashboard/index.vue",
+    "chunkName": "pages/dashboard/index"
   },
   {
     "name": "earning",
     "path": "/earning",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/earning/index.vue",
-    "chunkName": "pages/earning/index",
-    "_name": "_1f323dae"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/earning/index.vue",
+    "chunkName": "pages/earning/index"
   },
   {
     "name": "primaryArtist",
     "path": "/primaryArtist",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/primaryArtist/index.vue",
-    "chunkName": "pages/primaryArtist/index",
-    "_name": "_7dde530d"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/primaryArtist/index.vue",
+    "chunkName": "pages/primaryArtist/index"
   },
   {
     "name": "releaseAudio",
     "path": "/releaseAudio",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/releaseAudio/index.vue",
-    "chunkName": "pages/releaseAudio/index",
-    "_name": "_2fea1801"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/releaseAudio/index.vue",
+    "chunkName": "pages/releaseAudio/index"
   },
   {
     "name": "primaryArtist-edit",
     "path": "/primaryArtist/edit",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/primaryArtist/edit.vue",
-    "chunkName": "pages/primaryArtist/edit",
-    "_name": "_01f0ba9f"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/primaryArtist/edit.vue",
+    "chunkName": "pages/primaryArtist/edit"
   },
   {
     "name": "releaseAudio-show",
     "path": "/releaseAudio/show",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/releaseAudio/show.vue",
-    "chunkName": "pages/releaseAudio/show",
-    "_name": "_51ef429e"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/releaseAudio/show.vue",
+    "chunkName": "pages/releaseAudio/show"
   },
   {
     "name": "youtubeRequest-addClaimRelease",
     "path": "/youtubeRequest/addClaimRelease",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/youtubeRequest/addClaimRelease.vue",
-    "chunkName": "pages/youtubeRequest/addClaimRelease",
-    "_name": "_b306ef10"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/youtubeRequest/addClaimRelease.vue",
+    "chunkName": "pages/youtubeRequest/addClaimRelease"
   },
   {
     "name": "youtubeRequest-artistChannelReq",
     "path": "/youtubeRequest/artistChannelReq",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/youtubeRequest/artistChannelReq.vue",
-    "chunkName": "pages/youtubeRequest/artistChannelReq",
-    "_name": "_dbcb1a34"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/youtubeRequest/artistChannelReq.vue",
+    "chunkName": "pages/youtubeRequest/artistChannelReq"
   },
   {
     "name": "youtubeRequest-contentIdReq",
     "path": "/youtubeRequest/contentIdReq",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/youtubeRequest/contentIdReq.vue",
-    "chunkName": "pages/youtubeRequest/contentIdReq",
-    "_name": "_65f4fe2e"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/youtubeRequest/contentIdReq.vue",
+    "chunkName": "pages/youtubeRequest/contentIdReq"
   },
   {
     "name": "catalog-id",
     "path": "/catalog/:id",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/catalog/_id.vue",
-    "chunkName": "pages/catalog/_id",
-    "_name": "_b79da0b6"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/catalog/_id.vue",
+    "chunkName": "pages/catalog/_id"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/fahimaloy/projects/Dream-Records/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_92e95d1a"
+    "component": "/media/freelancer_shakil/413f5a01-717c-40cf-84b7-d6b44233e4a7/home/freelancer_shakil/My Projects/Dream Records/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]
