@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <!-- menubar -->
-    <div
+    <!-- <div
       v-if="sidebar"
       class="block md:hidden absolute top-0 bottom-0 left-0 right-0 bg-[#ddd]"
       style="z-index: 999"
@@ -14,8 +14,8 @@
       >
         X
       </div>
-    </div>
-    <SideMenuDashboard v-if="sidebar" class="hidden md:block" />
+    </div> -->
+    <SideMenuDashboard v-if="sidebar" />
     <!-- /menubar -->
 
     <!-- content area -->
@@ -42,7 +42,33 @@ export default {
   data() {
     return {
       sidebar: true,
+      isMobile: false,
     };
+  },
+  created() {
+    if (process.client) {
+      this.isMobile = window.innerWidth <= 768;
+      window.addEventListener('resize', this.handleResize);
+    }
+    this.sidebar = !this.isMobile;
+  },
+  destroyed() {
+    if (process.client) {
+      window.removeEventListener('resize', this.handleResize);
+    }
+  },
+  methods: {
+    handleResize() {
+      this.isMobile = window.innerWidth <= 768;
+      this.sidebar = !this.isMobile;
+    },
+  },
+  watch: {
+    $route() {
+      if (this.isMobile) {
+        this.sidebar = false;
+      }
+    },
   },
 };
 </script>
