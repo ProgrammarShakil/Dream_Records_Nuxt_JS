@@ -98,31 +98,106 @@
         </thead>
         <tbody>
           <tr class="secondary-color">
-            <td class="border border-slate-300 p-2">1234</td>
-            <td class="border border-slate-300 p-2">Name</td>
+            <td class="border border-slate-300 p-2">1</td>
+            <td class="border border-slate-300 p-2">Shakil</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">567357</td>
+            <td class="border border-slate-300 p-2">865656</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">https://fb.v71NrtdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v73in</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">450065</td>
             <td class="border border-slate-300 p-2 primary-color">
               <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
             </td>
           </tr>
           <tr class="secondary-color">
-            <td class="border border-slate-300 p-2">1234</td>
-            <td class="border border-slate-300 p-2">Name</td>
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
 
-            <td class="border border-slate-300 p-2">ID</td>
+            <td class="border border-slate-300 p-2">325345</td>
+            <td class="border border-slate-300 p-2 primary-color">
+              <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+            </td>
+          </tr>
+          <tr class="secondary-color">
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
+
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
+
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
+
+            <td class="border border-slate-300 p-2">325345</td>
+            <td class="border border-slate-300 p-2 primary-color">
+              <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+            </td>
+          </tr>
+          <tr class="secondary-color">
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
+
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
+
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
+
+            <td class="border border-slate-300 p-2">325345</td>
+            <td class="border border-slate-300 p-2 primary-color">
+              <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+            </td>
+          </tr>
+          <tr class="secondary-color">
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
+
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
+
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
+
+            <td class="border border-slate-300 p-2">325345</td>
+            <td class="border border-slate-300 p-2 primary-color">
+              <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+            </td>
+          </tr>
+          <tr class="secondary-color">
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
+
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
+
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
+
+            <td class="border border-slate-300 p-2">325345</td>
+            <td class="border border-slate-300 p-2 primary-color">
+              <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
+            </td>
+          </tr>
+          <tr class="secondary-color">
+            <td class="border border-slate-300 p-2">2</td>
+            <td class="border border-slate-300 p-2">Suvo</td>
+
+            <td class="border border-slate-300 p-2">456456</td>
+            <td class="border border-slate-300 p-2">158799</td>
+
+            <td class="border border-slate-300 p-2">https://fb.v71NnhdVzwU</td>
+            <td class="border border-slate-300 p-2">https://youtu.be/v71Nn</td>
+
+            <td class="border border-slate-300 p-2">325345</td>
             <td class="border border-slate-300 p-2 primary-color">
               <nuxt-link to="/primaryArtist/edit">Edit</nuxt-link>
             </td>

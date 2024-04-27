@@ -49,7 +49,7 @@
 
         <!--search bar -->
         <div class="secondary-color text-sm mt-2 cursor-pointer">
-          Mahfuzur R.
+          Shakil Islam Suvo
         </div>
         <!--/search bar -->
         <button
@@ -69,7 +69,7 @@
           </svg>
         </button>
         <div class="rounded mt-1 cursor-pointer">
-          <img src="~/assets/img/demoProfilePic.png" />
+          <img class="profile-image" src="~/assets/img/profile.png" />
         </div>
         <div>
           <Settings class="mt-2 cursor-pointer hidden" />
@@ -104,3 +104,10 @@ export default {
   // },
 };
 </script>
+<style>
+.profile-image{
+  width: 30px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+</style>
